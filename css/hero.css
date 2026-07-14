@@ -1,0 +1,63 @@
+/* --- HERO SECTION (SPACEX STYLE) --- */
+
+.hero {
+    grid-area: hero;
+    min-height: 550px;
+    /* Fusão perfeita da imagem com o fundo preto absoluto do site */
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, var(--bg-primary) 98%), 
+        url("../img/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Título Principal (Preciso e Tecnológico) */
+.hero h1 {
+    font-size: 45px;
+    font-weight: 300; /* Linhas finas transmitem elegância científica */
+    text-transform: uppercase;
+    letter-spacing: 8px; /* Espaçamento marcante aeroespacial */
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+/* Subtítulo / Chamada para Ação */
+.hero p {
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+/* Botão Saiba Mais */
+.hero button {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--text-primary);
+    padding: 14px 40px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 0; /* Cantos industriais estritamente retos */
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Hover do Botão da Hero */
+.hero button:hover {
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+}

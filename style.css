@@ -1,0 +1,23 @@
+@import url(./css/root.css);
+@import url(./css/header.css);
+@import url(./css/hero.css);
+@import url(./css/discoveries.css);
+@import url(./css/search.css);
+@import url(./css/result.css);
+@import url(./css/footer.css);
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-primary); /* Removido o #f5f5f5 do final */
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hero"
+        "discoveries"
+        "search"
+        "result"
+        "footer";
+    grid-template-rows: auto auto auto auto 1fr auto;
+}

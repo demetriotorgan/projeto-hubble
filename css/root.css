@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    /* Backgrounds */
+    --bg-primary: #000000;       /* Preto absoluto, fundo do site */
+    --bg-secondary: #0a0a0a;     /* Grafite ultra escuro para separar seções e cards */
+    --bg-card-hover: #141414;    /* Destaque sutil ao passar o mouse */
+
+    /* Text Colors */
+    --text-primary: #ffffff;     /* Branco puro para títulos e menus */
+    --text-secondary: #b3b3b3;   /* Cinza claro para descrições, subtextos e legendas */
+    --text-muted: #666666;       /* Cinza escuro para textos desativados ou miúdos */
+
+    /* Accent & Actions */
+    --accent-color: #ffffff;     /* A SpaceX usa o próprio branco/alto contraste como ação */
+    --accent-hover: #ffffff;    
+    --accent-border-alpha: rgba(255, 255, 255, 0.2); /* Borda semitransparente dos botões */
+
+    /* Borders & Dividers */
+    --border-color: #262626;     /* Linha cinza industrial bem fina */
+}

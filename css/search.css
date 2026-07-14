@@ -1,0 +1,70 @@
+/* --- BIRTHDAY SEARCH SECTION (SPACEX STYLE) --- */
+
+.birthday-search {
+    grid-area: search;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 20px;
+    background-color: var(--bg-primary);
+    border-bottom: 1px solid var(--border-color); /* Mantém a consistência das divisórias */
+}
+
+/* Customização dos Seletores (Dia e Mês) */
+.birthday-search select {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--accent-border-alpha); /* Linha fina e suave */
+    padding: 14px 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 0; /* Cantos estritamente retos */
+    cursor: pointer;
+    min-width: 140px;
+    outline: none;
+    appearance: none; /* Remove a seta padrão do sistema operacional */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><path d='M0 3l5 5 5-5z' fill='%23ffffff'/></svg>"); /* Seta minimalista em SVG */
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    transition: border-color 0.3s ease;
+}
+
+/* Foco e Hover nos Seletores */
+.birthday-search select:hover,
+.birthday-search select:focus {
+    border-color: var(--text-primary); /* Linha acende em branco puro */
+}
+
+/* Customização das opções dentro do select */
+.birthday-search select option {
+    background-color: var(--bg-secondary); /* Fundo escuro para o menu que desce */
+    color: var(--text-primary);
+}
+
+/* Botão de Busca Industrial */
+.birthday-search button {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--text-primary);
+    padding: 14px 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 0; /* Cantos 100% retos */
+    cursor: pointer;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Hover do Botão de Busca */
+.birthday-search button:hover {
+    background-color: var(--text-primary); /* Inverte o contraste */
+    color: var(--bg-primary);
+}

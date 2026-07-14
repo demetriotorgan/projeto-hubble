@@ -1,0 +1,94 @@
+/* --- FOOTER COMPONENT (SPACEX INDUSTRIAL STYLE) --- */
+
+.footer {
+    grid-area: footer;
+    background-color: var(--bg-secondary); /* Grafite ultra escuro para dar profundidade */
+    border-top: 1px solid var(--border-color); /* Linha fina delimitadora */
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Responsividade Base: Transiciona para linha em telas maiores */
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+/* Bloco da Marca / Projeto */
+.footer-brand {
+    max-width: 400px;
+}
+
+.footer-brand h3 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.footer-brand p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+/* Painel de Integrantes da Equipe */
+.footer-team {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+@media (min-width: 480px) {
+    .footer-team {
+        width: auto;
+        min-width: 300px;
+    }
+}
+
+/* Linha de cada Aluno */
+.team-member {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Divisória técnica muito suave entre alunos */
+}
+
+.team-member:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.member-name {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+}
+
+/* Links dos Ícones */
+.member-social {
+    display: flex;
+    gap: 16px;
+}
+
+.member-social a {
+    color: var(--text-muted); /* Ícones começam discretos */
+    font-size: 16px;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Efeito de Telemetria Ativa ao passar o mouse */
+.member-social a:hover {
+    color: var(--text-primary); /* Acende em branco puro no hover */
+}
