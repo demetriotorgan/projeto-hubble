@@ -5,9 +5,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 40px;
+    padding: 20px 40px;
     background-color: var(--bg-primary);
     border-bottom: 1px solid var(--border-color);
+}
+
+.result[hidden] {
+    display: none;
 }
 
 /* Container do Card de Resultado */
