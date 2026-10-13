@@ -1,0 +1,48 @@
+
+/* Área da imagem */
+.result-image {
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+    overflow: hidden;
+    background-color: var(--bg-secondary);
+}
+
+/* Imagem principal */
+.result-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* Estado de carregamento */
+.result-image.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Indicador visual */
+.result-image.loading::after {
+    content: "";
+    width: 42px;
+    height: 42px;
+    border: 3px solid rgba(101, 208, 244, 0.2);
+    border-top-color: #65D0F4;
+    border-radius: 50%;
+    animation: loading-spin 0.8s linear infinite;
+}
+
+/* Esconde a imagem enquanto carrega */
+.result-image.loading img {
+    display: none;
+}
+
+/* Animação */
+@keyframes loading-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
